@@ -1,7 +1,6 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
 from typing import List
-import uvicorn
 
 from database import engine, get_db, Base
 from models import Plant as PlantModel   # ← yahan alias laga diya (sabse important line)

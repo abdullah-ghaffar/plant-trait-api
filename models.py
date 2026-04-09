@@ -1,7 +1,6 @@
 from sqlalchemy import Column, Integer, String, DateTime
 from sqlalchemy.sql import func
 from database import Base
-import datetime
 
 class Plant(Base):
     __tablename__ = "plants"
