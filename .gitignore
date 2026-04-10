@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+plant_traits.db
+.env
