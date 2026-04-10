@@ -71,3 +71,7 @@ def get_plants_by_habitat(habitat_name: str, db: Session = Depends(get_db)):
 @app.get("/")
 def root():
     return {"message": "🌱 Plant Trait Database API is running! Go to /docs"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000)
